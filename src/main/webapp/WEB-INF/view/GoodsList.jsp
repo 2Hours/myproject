@@ -17,6 +17,7 @@
     <script src="<%=basePath%>/assets/js/jquery-1.10.2.js"></script>
     <script src="<%=basePath%>/assets/js/bootstrap.min.js"></script>
     <script src="<%=basePath%>/assets/js/jquery.metisMenu.js"></script>
+    <script src="<%=basePath%>assets/js/effects.js"></script>
     <script src="<%=basePath%>/assets/js/page.js"></script>
     <script src="<%=basePath%>/assets/js/gazetteBillSwitch/transform.js"></script>
 </head>

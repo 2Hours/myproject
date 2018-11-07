@@ -13,6 +13,7 @@
     <title>库存管理系统后台</title>
     <link rel="stylesheet" href="../assets/css/login.css">
     <script src="../assets/js/jquery-1.10.2.js"></script>
+    <script src="<%=basePath%>assets/js/effects.js"></script>
 </head>
 
 <body>
