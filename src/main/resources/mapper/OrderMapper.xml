@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hzq.ssmboot.manage.mapper.OrderMapper" >
+
+    <insert id="addOrder" parameterType="com.hzq.ssmboot.manage.model.Order">
+        INSERT INTO `order`(order_id,order_no,goods_no,order_type,keeper,mobile,create_time) VALUES (#{order_id},#{order_no},#{goods_no},#{order_type},#{keeper},#{mobile},#{create_time})
+    </insert>
+
+    <update id="updateOrder">
+
+    </update>
+
+    <delete id="deleteOrder">
+        DELETE FROM `order` WHERE order_id=#{orderId}
+    </delete>
+
+    <select id="findOrder" resultType="com.hzq.ssmboot.manage.model.Order">
+        SELECT *
+        FROM `order`
+        <where>
+            <if test="order_no != null and order_no !=''">
+                and order_no = #{order_no}
+            </if>
+            <if test="order_type != null and order_type !=''">
+                and order_type = #{order_type}
+            </if>
+        </where>
+        order by create_time desc
+        <if test="pageNum != null and pageNum != ''">
+            limit #{pageSize} offset ${(pageNum - 1) * pageSize}
+        </if>
+    </select>
+
+    <select id="checkOrder" resultType="java.lang.Integer">
+        SELECT COUNT(*)
+        FROM `order`
+        <where>
+            <if test="order_no != null and order_no !=''">
+                and order_no = #{order_no}
+            </if>
+            <if test="order_type != null and order_type !=''">
+                and order_type = #{order_type}
+            </if>
+        </where>
+    </select>
+    <select id="orderDetails" resultType="Map">
+        SELECT o.*,g.goods_id,g.goods_no,g.goods_name,g.goods_color,g.goods_size,g.face_material,g.inner_material,g.produce_price,g.retail_price,g.inventory
+        FROM `order` o
+        LEFT JOIN goods g on g.goods_no=o.goods_no
+        WHERE o.order_id=#{orderId}
+    </select>
+
+</mapper>

@@ -1,0 +1,37 @@
+
+td{
+    padding: 0;
+    margin-bottom: 11px;
+    float: left;
+    font-size:14px;
+}
+.receivables{
+    margin-bottom: 10px;
+    float:left;
+    font-size:14px;
+    width: 100%;
+    margin-top: 18px;
+}
+.img{
+    margin-top: 12px;
+    list-style: none;
+}
+li{
+    list-style: none;
+}
+
+.payment-details td{
+	border: 1px solid #ddd;
+	margin-bottom:0px;
+	padding: 5px 10px;
+	width: 180px;
+	text-align: center;
+}
+
+.bonus-details td{
+	border: 1px solid #ddd;
+	margin-bottom:0px;
+	padding: 5px 10px;
+	width: 180px;
+	text-align: center;
+}

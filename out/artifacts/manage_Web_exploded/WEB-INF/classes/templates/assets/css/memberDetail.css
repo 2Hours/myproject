@@ -1,0 +1,10 @@
+
+.info tr td{
+    margin-bottom: 15px;
+    padding: 0;
+    float:left;
+}
+.pagination{
+    font-size: 12px;
+    display: inline-block;
+}

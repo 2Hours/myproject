@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hzq.ssmboot.manage.mapper.GoodsMapper" >
+
+    <select id="findGoods"  resultType="com.hzq.ssmboot.manage.model.Goods">
+        SELECT *
+        FROM goods
+        <where>
+            <if test="goods_id != null and goods_no != ''">
+                and goods_id = #{goods_id}
+            </if>
+            <if test="goods_no != null and goods_no != ''">
+               and goods_no LIKE concat('%',#{goods_no},'%')
+            </if>
+            <if test="goods_size != null and goods_size != ''">
+                and goods_size = #{goods_size}
+            </if>
+            <if test="goods_color != null and goods_color != ''">
+               and goods_color = #{goods_color}
+            </if>
+        </where>
+        order by create_time desc
+        <if test="pageNum != null and pageNum != ''">
+          limit #{pageSize} offset ${(pageNum - 1) * pageSize}
+        </if>
+    </select>
+    <select id="selectCount"  resultType="int">
+        SELECT count(*)
+        FROM goods
+        <where>
+            <if test="goods_no != null and goods_no != ''">
+                and goods_no LIKE concat('%',#{goods_no},'%')
+            </if>
+            <if test="goods_size != null and goods_size != ''">
+                and goods_size = #{goods_size}
+            </if>
+            <if test="goods_color != null and goods_color != ''">
+                and goods_color = #{goods_color}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+    <select id="checkInventory" resultType="java.lang.Integer">
+        SELECT inventory
+        FROM goods
+        WHERE goods_no = #{goods_no}
+    </select>
+    <insert id="addGoods" parameterType="com.hzq.ssmboot.manage.model.Goods">
+        INSERT INTO goods VALUES(#{goods_id},#{goods_no},#{goods_name},#{goods_color},#{goods_size},#{face_material},#{inner_material},#{produce_price},#{retail_price},#{inventory},#{create_time},#{modify_time})
+    </insert>
+    <delete id="deleteGoods">
+        DELETE FROM goods WHERE goods_id=#{goodsId}
+    </delete>
+    <update id="updateGoods" parameterType="com.hzq.ssmboot.manage.model.Goods">
+        UPDATE goods
+        <set>
+            <if test="goods_no !=null and goods_no !=''">
+                goods_no = #{goods_no},
+            </if>
+            <if test="goods_name !=null and goods_name !=''">
+                goods_name = #{goods_name},
+            </if>
+            <if test="goods_color !=null and goods_color !=''">
+                goods_color = #{goods_color},
+            </if>
+            <if test="goods_size !=null and goods_size !=''">
+                goods_size = #{goods_size},
+            </if>
+            <if test="face_material !=null and face_material !=''">
+                face_material = #{face_material},
+            </if>
+            <if test="inner_material !=null and inner_material !=''">
+                inner_material = #{inner_material},
+            </if>
+            <if test="produce_price !=null and produce_price !=''">
+                produce_price = #{produce_price},
+            </if>
+            <if test="retail_price !=null and retail_price !=''">
+                retail_price = #{retail_price},
+            </if>
+            <if test="inventory !=null and inventory !=''">
+                inventory = #{inventory},
+            </if>
+            modify_time = now()
+        </set>
+        where goods_no = #{goods_no}
+    </update>
+</mapper>

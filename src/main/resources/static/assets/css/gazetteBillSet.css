@@ -1,0 +1,27 @@
+p input{
+    border-width: 0;
+}
+button{
+    margin-top:10px;
+}
+.muchenlou {
+    font-size: 14px;
+}
+
+.muchenlou_botton {
+    color: #55585a;
+}
+.underline {
+    text-decoration: underline;
+}
+#BOH_DirectDriveDistrict,#Bill_DirectDriveDistrict,#Bill_DirectDriveBill,#Agent_DirectDriveDistrict,#Agent_DirectDriveBill,#Agent_districtAndAgency,#EXTRA_AGENT_DIRECT_PUSH_AREA,#EXTRA_GAZETTE_DIRECT_PUSH_AREA,#EXTRA_AREA_DIRECT_PUSH_AREA,#SHARE_PERSON,#GENLIS_CITY_AREA,#GENLIS_PROVINCE_AREA,#LOCAL_GENLIS_AREA,#INDIRECT_AGENT,#DIRECT_AGENT{
+    width:21px;
+}
+#BOH_DirectDriveBill,#BOH_districtAndBill,#BOH_districtAndAgency,#Bill_districtAndAgency,#Bill_districtAndPushAgency,#LOCK_CONSUMIDOR_SHOP,#CONSUMIDOR{
+    width: 21px;
+}
+
+#BOH_conventionPrice,#BOH_credit,#BOH_installment,#BOH_retainage,#Bill_conventionPrice,#Bill_credit,#Bill_installment,#Bill_retainage,#Agent_conventionPrice,#Agent_credit,#Agent_installment,#Agent_retainage{
+    width:77px;
+    margin-right:50px;
+}

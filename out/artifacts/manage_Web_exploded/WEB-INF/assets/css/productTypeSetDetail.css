@@ -1,0 +1,168 @@
+.panel-body{
+    height:1200px;
+}
+.profit input{
+    border-width: 0;
+    width:16%;
+}
+.button{
+    margin-top:10px;
+}
+
+.muchenlou {
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.muchenlou_top{
+    width: 15%;
+    margin: 0;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+.muchenlou_title{
+    font-size: 18px;
+    height: 35px;
+    line-height: 35px;
+    width: 40%;
+    margin: 0;
+    float: left;
+    border: 0;
+}
+.muchenlou_top .not_edit{
+    margin: 0 10px;
+    font-size: 12px;
+    float: left;
+    padding: 0;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    top: 5px;
+    left: 38%;
+    width: 15%;
+    color: #3f51b5;
+    cursor: pointer;
+}
+.profit{
+    margin: 0;
+    float:left;
+    width: 10%;
+    font-size: 16px;
+    color: rgb(0, 150, 136);
+}
+.profit .not_edit{
+    font-size: 12px;
+    float: right;
+    padding: 0;
+    height: 30px;
+    line-height: 36px;
+    width: 20%;
+    color: #3f51b5;
+    cursor: pointer;
+    margin-right: 22px;
+}
+.muchenlou button{
+    float: right;
+    color: #333;
+    margin-right: 300px;
+    width: 5%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.classification{
+    width:100%;
+    float:left;
+}
+.classification .classification_list{
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    float: left;
+    margin: 60px 0;
+    margin-left: 70px;
+}
+.classification .classification_list li{
+    border: 1px solid #ccc;
+    width: 16%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #090909;
+    float: left;
+    text-align: center;
+    margin: 0 20px;
+    box-sizing: border-box;
+}
+.classification .classification_list li span{
+    color: #3f51b5;
+    font-size: 12px;
+    float: right;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.Bomb_box{
+    width: 100%;
+    margin: 200px 300px 0 500px;
+   display:none;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+}
+.add{
+    width: 410px;
+    height: 340px;
+    left: 500px;
+    top: 250px;
+    background-color: rgb(227, 227, 227);
+    transform: rotate(0deg);
+    font-size: 14px;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    font-weight: normal;
+    font-style: normal;
+    z-index: 15;
+    opacity: 1;
+    transition: 0.4s linear 0s;
+}
+.add p{
+    font-size: 14px;
+}
+.add input{
+    margin: 10px 118px;
+    color: #878484;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    height: 30px;
+    padding: 0 10px;
+}
+.add .cancel{
+    width: 20%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 40px;
+
+}
+.add .Determine{
+    width: 20%;
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px;
+
+}
+.percent{
+    border-width: 0;
+    width:16%;
+}

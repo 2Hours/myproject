@@ -1,0 +1,29 @@
+p input{
+    border-width: 0;
+}
+button{
+    margin-top:10px;
+}
+.muchenlou {
+    font-size: 14px;
+}
+
+.muchenlou_botton {
+    color: #55585a;
+}
+.underline {
+    text-decoration: underline;
+}
+#consumer,#consumer_merchant,#straight_push_agent{
+    width:1.5%;
+}
+#Push_the_agent_between,#genlis_BOH,#Share_one{
+    width: 1%;
+}
+#Bill_districtAndAgency{
+    width:1.2%;
+}
+#BOH_conventionPrice,#BOH_credit,#BOH_installment,#BOH_retainage,#Bill_conventionPrice,#Bill_credit,#Bill_installment,#Bill_retainage,#Agent_conventionPrice,#Agent_credit,#Agent_installment,#Agent_retainage{
+    width:5%;
+    margin-right:50px;
+}

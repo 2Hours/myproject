@@ -1,0 +1,193 @@
+html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+    margin: 0;
+    padding: 0;
+}
+*{box-sizing: border-box;}
+
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size:14px;
+    color:#333;
+}
+h1, h2, h3, h4, h5, h6{font-weight:normal;}
+ul,ol {
+    list-style: none;
+}
+
+img {
+    border: none;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: #232323;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+input, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: ".";
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+.tl {
+    text-align: left;
+}
+
+.tc {
+    text-align: center
+}
+
+.tr {
+    text-align: right;
+}
+
+.ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.inline{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+html ,body,.nav{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.nav{
+    background-image: url(../img/loginBi.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.nav-right{
+    width: 30%;
+    height: 91%;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    margin: 2.3% 2.6% 2.6% 2.6%;
+}
+.inputBox{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -175px;
+}
+.inputBox-top,.inputBox-bottom{
+    border: 2px solid #4569F3;
+    height: 60px;
+    width: 85%;
+    margin-top: 10px;
+    margin-left: 7.5%;
+}
+.inputBox-top input{
+    height: 100%;
+    width: 85%;
+    font-size: 20px;
+    color: #4d4c51;
+}
+.inputBox-top span{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background: url("../img/zh.png") no-repeat;
+    background-position: center;
+    margin: 0 7px;
+}
+.inputBox-bottom span:first-child{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background: url("../img/mm.png") no-repeat;
+    background-position: center;
+    margin: 0 7px;
+}
+.inputBox-bottom span:last-child{
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    background: url("../img/yj.png") no-repeat;
+    background-position: center;
+    margin: 0 5px;
+
+}
+.inputBox-bottom input{
+    height: 100%;
+    width: 78%;
+    font-size: 20px;
+    color: #4d4c51;
+}
+.inputBox h1{
+    width: 112px;
+    text-align: center;
+    border-bottom: 3px solid #4569F3;
+    margin: 25px auto;
+    color: #4d4c51;
+}
+.nav-right button{
+    width: 85%;
+    height: 60px;
+    margin-left: 7.5%;
+    margin-top: 70px;
+    background-color: #4569F3;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+}
+.nav-left{
+    width: 60%;
+    height: 90%;
+    margin: 2.5% 0 2.5% 2.5%;
+    color: #ffffff;
+    padding: 25px;
+    position: relative;
+}
+.nav-left .lg{
+    margin: 7px 5px;
+}
+.nav-left .lg-b{
+    font-size: 27PX;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+.nav-left .lg-b p{
+    font-size: 20px;
+    text-align: right;
+}

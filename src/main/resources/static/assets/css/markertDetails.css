@@ -1,0 +1,60 @@
+tr td{
+    padding: 0;
+}
+#markert-details tr{
+    margin-top:15px;
+    float:left;
+}
+table{
+    margin-bottom: 10px;
+}
+.pagination{
+    font-size: 12px;
+    display: inline-block;
+}
+.markertOlb{
+    margin-top:20px;
+}
+li {
+    list-style-type: none;
+}
+
+.markertOlb ul {
+    margin: 0;
+    padding: 0;
+}
+.markertOlb li {
+    list-style-type: none;
+    width: 25%;
+    box-sizing: border-box;
+    height: 50px;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.markertOlb {
+    width: 85%;
+    height: 500px;
+    border: 1px solid #333;
+}
+
+.markertOlbLi {
+    background-color: #fff;
+}
+.boom {
+    background-color: darkgrey;
+}
+.sorting_content{
+    width:210px;
+}
+
+#title-tab{
+	cursor: pointer;
+}
+
+.title-tab-tr{
+	background-color: #bdb9b9;
+}

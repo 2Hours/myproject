@@ -1,0 +1,52 @@
+
+tr td{
+    padding: 0;
+    margin-bottom: 12px;
+    float: left;
+    font-size: 14px;
+}
+.content{
+    width: 1100px;
+    height: 300px;
+    margin: 50px 200px 0 200px;
+}
+#pic_titles{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+#pic_titles .col-md-3 {
+    width: 12.5%;
+}
+
+
+#pic_content{
+    margin-top: 35px;
+}
+#pic_content .col-xs-6{
+    margin-bottom: 10px;
+}
+#dataTables-example_paginate{
+
+    margin-top: 15px;
+    position: relative;
+}
+.pagination{
+    font-size:12px;
+    margin-left: 750px;
+}
+#pic_titles div{
+    transition: .1s all ease-in-out;
+    height: 40px;
+    line-height: 40px;
+}
+
+
+#pic_titles div:hover{
+
+    background:#b1b1b1;
+    color:#fff;
+}
+#pic_titles{
+    cursor: pointer;
+}
+
